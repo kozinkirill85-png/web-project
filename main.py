@@ -1,3 +1,6 @@
+# Домашняя работа по веб-разработке
+# Выполнено задание: создание веб-приложения с Bootstrap
+# Дата: 27.01.2026
 import http.server
 import socketserver
 import os
@@ -35,5 +38,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print(f"Сервер запущен на http://localhost:{PORT}")
+    print(f"Сервер запущен на http://localhost:{PORT} - домашнее задание")
     httpd.serve_forever()
+
